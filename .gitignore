@@ -1,0 +1,5 @@
+.sass-cache
+frontend/public/js/lib
+node_modules
+tests/log/*
+.DS_Store
