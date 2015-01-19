@@ -47,8 +47,7 @@ angular.module('coffee_timer').controller('TimerController',
     $scope.minutes = 0;
     $scope.seconds = 0;
     var stop;
-    var timer = new Timer($scope,$interval);
-    timer();
+
     $scope.timer = function() {
       if(angular.isDefined(stop)){ return; }
 
@@ -80,11 +79,6 @@ angular.module('coffee_timer').controller('TimerController',
     });
 
 }]);
-
-function Timer (scope, interval) {
-  return function () {
-    console.log(scope);
-  };
-}/* jshint ignore:start */
+/* jshint ignore:start */
 })(window, document);
 /* jshint ignore:end */
