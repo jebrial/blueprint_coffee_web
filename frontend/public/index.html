@@ -12,33 +12,43 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/simple.css">
 </head>
-<body ng-controller="TimerController" ng-cloak>
+<body ng-cloak>
   <header>
     <nav>
       <ul>
-        <li></li>
-        <li></li>
+        <!-- <li></li>
+        <li></li> -->
       </ul>
     </nav>
   </header>
-  <section>
-  </section>
+  <div class="container">
+    <div class="timer" ng-controller="TimerController" >
+      <div class="display-outer">
+        <div class="display-inner">
+        <span class=" lead counter">{{minutes}} : {{seconds}}</span><br/>
+        </div>
+      </div>
+      <div class="controls-outer">
+        <div class="top-controls">
+        </div>
+      </div>
+      <div class="controls-outer">
+        <div class="bottom-controls">
+          <button type="button" class="" data-ng-click="timer_reset()">Reset</button>
+          <button type="button" class=""data-ng-click="timer_stop()">Stop</button>
+          <button type="button" class="" data-ng-click="timer()">Start</button><br/>
+        </div>
+      </div>
+    </div>
+    <div class="ads">
+
+    </div>
+  </div>
   <footer></footer>
   <script type="text/javascript" src="js/lib/jquery/dist/jquery.js"></script>
-  <script src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/lib/angular/angular.js"></script>
   <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
   <script type="text/javascript" src="js/lib/angular-animate/angular-animate.js"></script>
   <script type="text/javascript" src="js/app.min.js"></script>
 </body>
 </html>
-
-  <!--   <div class="bp-timer">
-
-      <span class=" lead counter">{{minutes}} : {{seconds}}</span><br/>
-      <div class="bp-timer-controls">
-        <button type="button" class="" data-ng-click="timer_reset()">Reset</button>
-        <button type="button" class=""data-ng-click="timer_stop()">Stop</button>
-        <button type="button" class="" data-ng-click="timer()">Start</button><br/>
-      </div>
-    </div> -->
