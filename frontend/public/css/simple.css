@@ -1,5 +1,5 @@
 body {
-font-family: Helvetica, Arial, sans-serf;
+font-family: Arial, sans-serf;
 }
 
 header {
@@ -25,7 +25,6 @@ nav ul li {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-
 nav ul a ,
 nav ul a:link,
 nav ul a:visited,
@@ -36,16 +35,53 @@ nav ul a:active {
 }
 .container {
   background-color: gray;
+    position: absolute;
+    width:100%;
+    top:44px;
+
+    bottom:0;
 }
-.counter {
+.timer {
+  padding: 40px 15px;
+  margin:auto;
+  text-align: center;
+  width: 280px;
+}
+.timer .display-outer {
+  padding: 2px;
+  border:10px solid #00FF00;
+}
+.timer .display-inner {
+  background-color: #00FF00;
+}
+.timer .counter {
+  letter-spacing: -5px;
   color: white;
   font-size: 600%;
 }
-
-.timer {
-  padding: 40px 15px;
-  text-align: center;
+.timer .bottom-controls {
+  padding: 20px 0;
 }
-.bottom-controls {
-  margin-bottom: 60px;
+.timer .bottom-controls button {
+  font-family: Arial;
+  display: inline;
+  outline: 0;
+  border:none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-decoration:none;
+  box-shadow: none;
+  border-radius:1px;
+  -moz-border-radius:1px;
+  margin:10px;
+  width: 60px;
+  height: 60px;
+}
+.timer .bottom-controls button.reset {
+  background-color:#FFA500;
+}
+
+.timer .bottom-controls button:focus {
+   outline: 0;
+   border:1px solid black;
 }
